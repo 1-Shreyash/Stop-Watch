@@ -92,4 +92,7 @@ body{
     .tbody{
         max-height: 50vh;
     }
+    .ck1{
+        box-shadow: 0 0 2vw rgb(98, 98, 98) inset, 1.5vw 1.5vw 3vw rgb(0, 74, 177), -0.2vw -0.2vw 0.4vw rgb(0, 106, 255)inset;
+    }
 }
