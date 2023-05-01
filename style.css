@@ -24,8 +24,6 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    /* border: 1px solid white; */
-    /* overflow: hidden; */
 }
 .ck2{
     height: 0.5%;
@@ -35,7 +33,6 @@ body{
     position: absolute;
     top: 5%;
     left: 49.75%;
-    /* transform: rotateZ(6deg); */
     transform-origin: 50% 9000%;
 }
 .ck3{
@@ -46,24 +43,9 @@ body{
     position: absolute;
     top: 8%;
     left: 49.5%;
-    /* transform: rotateZ(6deg); */
     transform-origin: 50% 4200%;
     transition: 100ms;
-    /* transition-timing-function: linear; */
 }
-/* .ck4{
-    height: 1%;
-    width: 1%;
-    background-color: rgb(0, 106, 255);
-    border-radius: 50%;
-    position: absolute;
-    top: 3%;
-    left: 49%;
-    transform: rotateZ(6deg);
-    transform-origin: 0.5vw 4700%;
-    transition: 100ms;
-    transition-timing-function: linear;
-} */
 
 @media screen and (max-width: 600px) {
     body{

@@ -62,14 +62,6 @@ else{
     bt2[0].innerHTML = `<i class="fa-sharp fa-solid fa-clock-rotate-left fa-xl" style="color: #ffffff;"></i>`
     bt2[1].innerHTML = `<i class="fa-solid fa-flag fa-xl" style="color: #4a4a4a;">`
 }
-//setting the initial state of the blue dot
-// ItemJsonArrayStr2 = localStorage.lastTime;
-// x1 = Date.parse(ItemJsonArrayStr2);
-// x3= new Date();
-// crcl3 = document.querySelector(".ck3")
-// crcl3.style.setProperty('transform', `rotate(${((total+(x3-x1))/1000)*6}deg)`);
-
-
 
 //fuction used for start stop button
 function strstp(){
@@ -121,24 +113,11 @@ function  name1 () {
         crcl2s[i].style.setProperty('background', `rgb(0, 106, 255)`);
         for(let j=i;j>=0 && j>=i-8;j--){
             crcl2s[j].style.setProperty('box-shadow','0px 0px 2px rgb(0, 106, 255)');
-            // crcl2s[j].style.setProperty('heigth','1vw');
-            // crcl2s[j].style.setProperty('width','1vw');
-            // crcl2s[j].style.setProperty('transform-origin','0.5vw 80%');
-            // crcl2s[j].classList.add('ck4')
-            // crcl2s[j].style.scale = `2`
-            // crcl2s[j].style.setProperty('top','26.5%')
-            // crcl2s[j].style.setProperty('left','50%')
-            // crcl2s[j].style.setProperty('transform-origin','0vw 4700%')
-
         }
     }
     for(let i=Math.floor((total+(x3-x1))/1000)%60+1; i<60;i++){
         crcl2s[i].style.setProperty('background', `white`);
     }
-    // crcl2s.forEach((element,index) => {
-    // // element.style.transform = "rotateZ(" + index*6 + "deg)";
-    
-    // });
 }
 function start(){
     myInterval=setInterval(name1,10);
@@ -157,13 +136,11 @@ function reset(){
         ItemJsonArray3 = [];
         localStorage.setItem('timeList', JSON.stringify(ItemJsonArray3))
         updtList()
-        // tbl.setAttribute('class','tb')
         crcl3 = document.querySelector(".ck3")
         crcl3.style.setProperty('transform', `rotate( 0deg)`);
 
         crcl2s = document.querySelectorAll(".ck2")
         crcl2s.forEach((element) => {
-            // element.style.transform = "rotateZ(" + index*6 + "deg)";
             element.style.setProperty('background-color', `white`);
         });
         bt2 = document.querySelectorAll('.btn2')
@@ -207,12 +184,6 @@ function updtList(){
 }
 function addlist(){
     if(m==1){
-        // x4 = new Date();
-        // if(localStorage.getItem('LastAddListTime')==null)
-        //     localStorage.setItem('LastAddListTime',x4)
-
-        // x5 = Date.parse(localStorage.getItem('LastAddListTime'))
-
         if(localStorage.getItem('timeList')==null){
             ItemJsonArray3 = [];
             ItemJsonArray3.push(total+(x3-x1))
@@ -224,7 +195,6 @@ function addlist(){
             ItemJsonArray3.push(total+(x3-x1));
             localStorage.setItem('timeList',JSON.stringify(ItemJsonArray3));
         }
-        // localStorage.setItem('LastAddListTime',x4)
         //add elements to the table
         updtList()
     }
