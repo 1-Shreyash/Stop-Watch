@@ -94,9 +94,14 @@ body{
         max-height: 50vh;
     }
     .ck1{
-        box-shadow: 0 0 4vw rgb(98, 98, 98) inset, 2vw 2vw 4vw rgb(0, 74, 177), -1vw -1vw 2vw rgb(0, 106, 255)inset;
+        box-shadow: 0 0 4vw rgb(98, 98, 98) inset, 2vw 2vw 4vw rgb(0, 74, 177), -0.8vw -0.8vw 1.6vw rgb(0, 106, 255)inset;
     }
     .row{
         margin-top: 2vw;
+    }
+    .btn1{
+        height: 12%!important;
+        width: 12%!important;
+        top: 68% !important;;
     }
 }
