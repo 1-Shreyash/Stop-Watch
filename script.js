@@ -5,7 +5,7 @@ console.log(slides)
 //function to convert milliseconds into array time
 function converter(ms){
     let t=[];
-    t.push(Math.floor(ms/6000000)%100);
+    t.push(Math.floor(ms/3600000)%100);
     t.push(Math.floor(ms/60000)%60);
     t.push(Math.floor(ms/1000)%60);
     t.push(Math.floor(ms/10)%100);
