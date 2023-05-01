@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins',sans-serif;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    color: white;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+.ck1{
+    height: 50vw;
+    width: 50vw;
+    background-color: rgb(0, 0, 0);
+    box-shadow: 0 0 2vw rgb(98, 98, 98) inset, 0.5vw 0.5vw 1vw rgb(0, 74, 177), -0.2vw -0.2vw 0.4vw rgb(0, 106, 255)inset;
+    border-radius: 50%;
+    position: relative;
+    margin: 3vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid white; */
+    /* overflow: hidden; */
+}
+.ck2{
+    height: 0.5%;
+    width: 0.5%;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    position: absolute;
+    top: 5%;
+    left: 49.75%;
+    /* transform: rotateZ(6deg); */
+    transform-origin: 50% 9000%;
+}
+.ck3{
+    height: 1%;
+    width: 1%;
+    background-color: rgb(0, 106, 255);
+    border-radius: 50%;
+    position: absolute;
+    top: 8%;
+    left: 49.5%;
+    /* transform: rotateZ(6deg); */
+    transform-origin: 50% 4200%;
+    transition: 100ms;
+    /* transition-timing-function: linear; */
+}
+/* .ck4{
+    height: 1%;
+    width: 1%;
+    background-color: rgb(0, 106, 255);
+    border-radius: 50%;
+    position: absolute;
+    top: 3%;
+    left: 49%;
+    transform: rotateZ(6deg);
+    transform-origin: 0.5vw 4700%;
+    transition: 100ms;
+    transition-timing-function: linear;
+} */
+
+@media screen and (max-width: 600px) {
+    body{
+        flex-direction: column;
+    }
+    .ck1{
+        min-width: 90vw;
+        min-height: 90vw;
+    }
+    p{
+        padding-top:5%!important;
+        font-size: 10vw!important;
+    }
+    .time{
+        padding:0;
+        font-size: 13vw !important;
+    }
+    .tb{
+        width: 90vw!important;
+        max-height: 30vh;
+    }
+    .tbody,.tbody2{
+        width: 90vw!important;
+        font-size: 4vw!important;
+    }
+    .tbody{
+        max-height: 50vh;
+    }
+}

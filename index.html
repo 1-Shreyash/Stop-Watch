@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stop Watch</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <div class="ck1">
+        <div class="box">
+            <div class="time" id="hourL">
+              <div class="b">0</div>
+            </div>
+            <div class="time" id="hourR">
+              <div class="b">0</div>
+            </div>
+            <p>:</p>
+            <div class="time" id="minL">
+              <div class="b">0</div>
+            </div>
+            <div class="time" id="minR">
+              <div class="b">0</div>
+            </div>
+            <p>:</p>
+            <div class="time" id="secL" style="color: rgb(0, 106, 255);">
+              <div class="b">0</div>
+            </div>
+            <div class="time" id="secR" style="color: rgb(0, 106, 255);">
+              <div class="b">0</div>
+            </div>
+            <p style="color: rgb(0, 106, 255);">.</p>
+            <div class="time" id="msecL" style="color: rgb(0, 106, 255)!important;">
+              <div class="b">0</div>
+            </div>
+            <div class="time" id="msecR" style="color: rgb(0, 106, 255)!important;">
+              <div class="b">0</div>
+            </div>
+        </div> 
+        <button class="btn1" onclick="strstp()"><i class="fa-solid fa-play fa-xl" style="color: #ffffff;"></i></button>
+        <button class="btn2" style="left: 30%;" onclick="reset()"><i class="fa-sharp fa-solid fa-clock-rotate-left fa-xl" style="color: #4a4a4a;"></i></button>
+        <button class="btn2" style="right: 30%;" onclick="addlist()"><i class="fa-solid fa-flag fa-xl" style="color: #4a4a4a;"></i></button>
+    </div>
+    <div class="tb" id = 'tbl'>
+        <div class="tbody2">
+            <div class="row">
+                <div class="c1">Lap</div>
+                <div class="c2">Lap Time</div>
+                <div class="c2">Total</div>
+            </div>
+        </div>
+        <div class="tbody" id="tbody"></div>
+    </div>
+    <script src="app.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
