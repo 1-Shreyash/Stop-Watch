@@ -111,9 +111,9 @@ function  name1 () {
     crcl2s = document.querySelectorAll(".ck2")
     for(let i=0;i<=Math.floor((total+(x3-x1))/1000)%60;i++){
         crcl2s[i].style.setProperty('background', `rgb(0, 106, 255)`);
-        for(let j=i;j>=0 && j>=i-8;j--){
-            crcl2s[j].style.setProperty('box-shadow','0px 0px 2px rgb(0, 106, 255)');
-        }
+        // for(let j=i;j>=0 && j>=i-8;j--){
+        //     crcl2s[j].style.setProperty('box-shadow','0px 0px 2px rgb(0, 106, 255)');
+        // }
     }
     for(let i=Math.floor((total+(x3-x1))/1000)%60+1; i<60;i++){
         crcl2s[i].style.setProperty('background', `white`);
