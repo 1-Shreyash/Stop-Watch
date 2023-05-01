@@ -38,10 +38,10 @@ if(m==1){
     x1 = Date.parse(ItemJsonArrayStr2);
     start();
     bt1 = document.querySelector('.btn1')
-    bt1.innerHTML = `<i class="fa-solid fa-play fa-xl" style="color: #ffffff;"></i>`;
+    bt1.innerHTML = `<i class="fa-solid fa-pause fa-xl" style="color: #ffffff;"></i>`;
     bt2 = document.querySelectorAll('.btn2')
-    bt2[0].innerHTML = `<i class="fa-sharp fa-solid fa-clock-rotate-left fa-xl" style="color: #ffffff;"></i>`
-    bt2[1].innerHTML = `<i class="fa-solid fa-flag fa-xl" style="color: #4a4a4a;">`
+    bt2[0].innerHTML = `<i class="fa-sharp fa-solid fa-clock-rotate-left fa-xl" style="color: #4a4a4a;"></i>`
+    bt2[1].innerHTML = `<i class="fa-solid fa-flag fa-xl" style="color: #ffffff;">`
 }
 else{
     let a;
@@ -55,11 +55,12 @@ else{
     counter[7]= a[3]%10;
     counter[6]=  Math.floor(a[3]/10)%10;
     update();
+    
     bt1 = document.querySelector('.btn1')
-    bt1.innerHTML = `<i class="fa-solid fa-pause fa-xl" style="color: #ffffff;"></i>`;
+    bt1.innerHTML = `<i class="fa-solid fa-play fa-xl" style="color: #ffffff;"></i>`;
     bt2 = document.querySelectorAll('.btn2')
-    bt2[0].innerHTML = `<i class="fa-sharp fa-solid fa-clock-rotate-left fa-xl" style="color: #4a4a4a;"></i>`
-    bt2[1].innerHTML = `<i class="fa-solid fa-flag fa-xl" style="color: #ffffff;">`
+    bt2[0].innerHTML = `<i class="fa-sharp fa-solid fa-clock-rotate-left fa-xl" style="color: #ffffff;"></i>`
+    bt2[1].innerHTML = `<i class="fa-solid fa-flag fa-xl" style="color: #4a4a4a;">`
 }
 //setting the initial state of the blue dot
 // ItemJsonArrayStr2 = localStorage.lastTime;
