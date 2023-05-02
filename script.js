@@ -172,7 +172,7 @@ function updtList(){
                 str = `
                 <div class="row">
                   <div class="c1">${index+1}</div>
-                  <div class="c2">+${Math.floor(t1[0]/10)%10}${t1[0]%10}:${Math.floor(t1[1]/10)%10}${t1[1]%10}:${Math.floor(t1[2]/10)%10}${t1[2]%10}.${Math.floor(t1[3]/10)%10}${t1[3]%10}</div>
+                  <div class="c2">+ ${Math.floor(t1[0]/10)%10}${t1[0]%10}:${Math.floor(t1[1]/10)%10}${t1[1]%10}:${Math.floor(t1[2]/10)%10}${t1[2]%10}.${Math.floor(t1[3]/10)%10}${t1[3]%10}</div>
                   <div class="c2">${Math.floor(t2[0]/10)%10}${t2[0]%10}:${Math.floor(t2[1]/10)%10}${t2[1]%10}:${Math.floor(t2[2]/10)%10}${t2[2]%10}.${Math.floor(t2[3]/10)%10}${t2[3]%10}</div>
                 </div>
                 `
