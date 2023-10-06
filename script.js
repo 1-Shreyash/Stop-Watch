@@ -106,8 +106,9 @@ function  name1 () {
     counter[6]=  Math.floor(a[3]/10)%10;
     update();
 
-    crcl3.style.setProperty('transform', `rotate(${((total+(x3-x1))/1000)*6}deg)`);
+    crcl3.style.setProperty('transform', `rotate(${a[0]*6}deg)`);
 
+//((total+(x3-x1))/1000)*6
     crcl2s = document.querySelectorAll(".ck2")
     for(let i=0;i<=Math.floor((total+(x3-x1))/1000)%60;i++){
         crcl2s[i].style.setProperty('background', `rgb(0, 106, 255)`);
